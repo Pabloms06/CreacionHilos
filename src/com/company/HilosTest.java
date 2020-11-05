@@ -16,7 +16,7 @@ public class HilosTest extends Thread {
 
 public void hilos() throws InterruptedException{
     int numero=0;
-    for (int i = 1; i <= 5; i++) {
+    for (int i = 1; i <= 100; i++) {
 
         numero = (int) (Math.random() * (8000 - 1000)) + 1000;
 
