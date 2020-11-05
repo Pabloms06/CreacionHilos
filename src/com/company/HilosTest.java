@@ -16,11 +16,11 @@ public class HilosTest extends Thread {
 
 public void hilos() throws InterruptedException{
     int numero=0;
-    for (int i = 0; i <= 100; i++) {
-        System.out.println("Hilo numero " + i);
+    for (int i = 1; i <= 5; i++) {
+
         numero = (int) (Math.random() * (8000 - 1000)) + 1000;
 
-        System.out.println("Hilo " + i + "ha dormido por " + numero + "milisegundos");
+        System.out.println("Hilo " + i + " ha dormido por " + numero + " milisegundos");
         try {
             Thread.sleep(numero);
         } catch (InterruptedException e) {
